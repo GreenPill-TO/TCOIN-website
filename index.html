@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toronto Coin – Empowering Toronto’s Economy</title>
+    <title>Toronto Coin (T-Coin) – Empowering Toronto’s Economy</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+        
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Montserrat', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #1c1e53, #283593);
+            background: url('https://github.com/GreenPill-TO/TCOIN-website/blob/main/files/background_blue.jpg?raw=true') no-repeat center center fixed;
+            background-size: cover;
             color: #fff;
             font-size: 1.2em;
         }
@@ -27,22 +30,31 @@
             font-size: 3.5em;
             margin: 0;
             color: #ff4081;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         section {
             padding: 40px 20px;
             margin: 20px 0;
             border-radius: 10px;
             background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
         }
         section h2 {
             font-size: 2.5em;
             color: #ff4081;
             margin-bottom: 20px;
             text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         section p {
             font-size: 1.3em;
             line-height: 1.8;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
         ul {
             list-style-type: none;
@@ -51,10 +63,15 @@
         ul li {
             font-size: 1.3em;
             margin-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         }
         ul li a {
             color: #ff4081;
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        ul li a:hover {
+            color: #ffc1e3;
         }
         footer {
             background: #1c1e53;
@@ -67,9 +84,10 @@
         a {
             color: #ff4081;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
         a:hover {
-            text-decoration: underline;
+            color: #ffc1e3;
         }
     </style>
 </head>
